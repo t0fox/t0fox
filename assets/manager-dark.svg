@@ -19,7 +19,7 @@
   <text x="36" y="143" class="body" fill="#A1A1AA">Preview → Validate → Apply lifecycle, diagnostics, WARP, and routing.</text>
   <rect x="36" y="148" width="68" height="28" rx="14" fill="#1B1B21"/><text x="46" y="167" class="tag" fill="#A1A1AA">OpenWrt</text><rect x="112.4" y="148" width="47" height="28" rx="14" fill="#1B1B21"/><text x="122.4" y="167" class="tag" fill="#A1A1AA">LuCI</text><rect x="167.2" y="148" width="40" height="28" rx="14" fill="#1B1B21"/><text x="177.2" y="167" class="tag" fill="#A1A1AA">APK</text>
   <rect x="992" y="34" width="132" height="116" rx="28" fill="#19191F"/>
-  <g transform="translate(1014 48)">
+  <g transform="translate(1010 44)">
       <rect x="4" y="4" width="88" height="88" rx="22" fill="url(#mgr)"/>
       <path d="M22 18H53V38L36 60V78H22C18.686 78 16 75.314 16 72V24C16 20.686 18.686 18 22 18Z" fill="#F8FAFC"/>
       <path d="M68 18H74C77.314 18 80 20.686 80 24V72C80 75.314 77.314 78 74 78H47V58L64 36V22C64 19.791 65.791 18 68 18Z" fill="#F8FAFC"/>
