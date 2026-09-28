@@ -27,6 +27,15 @@ Most of my projects start with a practical systems problem: make a service easie
 </a>
 
 <br>
+<a href="https://github.com/t0fox/zapret2-manager">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/manager-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/manager-light.svg">
+    <img src="./assets/manager-light.svg" width="100%" alt="zapret2.manager — OpenWrt LuCI manager for zapret2-z2k">
+  </picture>
+</a>
+
+<br>
 
 <a href="https://github.com/t0fox/VelvLens">
   <picture>
@@ -50,7 +59,7 @@ Most of my projects start with a practical systems problem: make a service easie
 
 Working on OpenWrt networking and packaging, safer upstream synchronization for **z2kOW**, and small systems tools where diagnostics and reproducible builds matter as much as the feature itself.
 
-Also maintaining [zapret2-manager](https://github.com/t0fox/zapret2-manager) and experimenting with Rust-based tooling.
+Also experimenting with Rust-based systems tooling.
 
 ## Activity
 
