@@ -3,20 +3,20 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-light.svg" width="100%" alt="t0fox — systems, networks, and tools">
+  <img src="./assets/hero-light.svg" width="100%" alt="Kirill / t0fox — DevOps and Systems Engineer">
 </picture>
-
-<br><br>
-
-<sub><strong>Linux</strong> · OpenWrt · Docker · Nginx · GitHub Actions · Bash · Python · Rust</sub>
 
 </div>
 
-<br>
+## About
 
-I build infrastructure and networking tools, mostly around **Linux, OpenWrt, containers, and automation**. I care about systems that are observable, reproducible, and easier to operate than they were to build.
+I'm Kirill — a **DevOps / systems engineer** focused on Linux infrastructure, networking, OpenWrt, containers, and CI/CD.
 
-## Selected work
+Most of my projects start with a practical systems problem: make a service easier to deploy, make network behavior observable, remove manual operations, or turn a fragile setup into something reproducible.
+
+**Core stack:** Linux · OpenWrt · Docker · Nginx · GitHub Actions · Bash · Python · Rust
+
+## Selected projects
 
 <a href="https://github.com/t0fox/z2kOW">
   <picture>
@@ -26,20 +26,17 @@ I build infrastructure and networking tools, mostly around **Linux, OpenWrt, con
   </picture>
 </a>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<br>
 
 <a href="https://github.com/t0fox/VelvLens">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/velvlens-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/velvlens-light.svg">
-    <img src="./assets/velvlens-light.svg" width="100%" alt="VelvLens — Windows desktop project">
+    <img src="./assets/velvlens-light.svg" width="100%" alt="VelvLens — portable Windows desktop project">
   </picture>
 </a>
 
-</td>
-<td width="50%" valign="top">
+<br>
 
 <a href="https://github.com/t0fox/dev-ops-backend">
   <picture>
@@ -49,18 +46,11 @@ I build infrastructure and networking tools, mostly around **Linux, OpenWrt, con
   </picture>
 </a>
 
-</td>
-</tr>
-</table>
+## Currently
 
-### What I optimize for
+Working on OpenWrt networking and packaging, safer upstream synchronization for **z2kOW**, and small systems tools where diagnostics and reproducible builds matter as much as the feature itself.
 
-**Clear boundaries.** Services should expose only what they need.  
-**Useful diagnostics.** Failures should explain themselves.  
-**Reproducible delivery.** CI should prove the thing being shipped.  
-**Small operational surface.** Fewer moving parts, fewer surprises.
-
-<sub>Also working on <a href="https://github.com/t0fox/zapret2-manager">zapret2-manager</a> and other networking/tooling experiments.</sub>
+Also maintaining [zapret2-manager](https://github.com/t0fox/zapret2-manager) and experimenting with Rust-based tooling.
 
 ## Activity
 
@@ -74,6 +64,6 @@ I build infrastructure and networking tools, mostly around **Linux, OpenWrt, con
 
 <br>
 
-<sub><code>build small · verify hard</code></sub>
+<sub><code>build · observe · verify · ship</code></sub>
 
 </div>
