@@ -1,0 +1,78 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 700 58px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:-2.2px; }
+    .subtitle { font: 400 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .eyebrow { font: 600 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:1.4px; }
+    .meta { font: 500 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .mono { font: 500 13px ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; }
+    .packet { offset-path:path("M760 294 C838 254 866 168 955 143 C1028 123 1065 169 1110 111"); animation: travel 8s cubic-bezier(.45,0,.2,1) infinite; }
+    .pulse { animation: pulse 3.6s ease-in-out infinite; transform-origin:955px 143px; }
+    .cursor { animation: blink 1.15s step-end infinite; }
+    @keyframes travel { 0%,8% { offset-distance:0%; opacity:0 } 14% {opacity:1} 82% {opacity:1} 92%,100% {offset-distance:100%;opacity:0} }
+    @keyframes pulse { 0%,100% { opacity:.32; transform:scale(.96) } 50% { opacity:.9; transform:scale(1.08) } }
+    @keyframes blink { 0%,48% {opacity:1} 49%,100% {opacity:0} }
+    @media (prefers-reduced-motion: reduce) {
+      .packet,.pulse,.cursor { animation:none !important; }
+      .packet { opacity:1; offset-distance:58%; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="40" x2="1130" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F7F9"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1002 157) rotate(135) scale(245 235)">
+      <stop stop-color="#6E5AE6" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#6E5AE6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="26" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="428" rx="34" fill="url(#bg)" stroke="#D8D8DE" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="428" rx="34" fill="url(#halo)"/>
+
+  <g opacity=".96">
+    <circle cx="54" cy="48" r="5" fill="#6E5AE6"/>
+    <text x="72" y="53" class="meta" fill="#6E6E73">t0fox</text>
+    <text x="1140" y="53" class="meta" fill="#9A9AA0" text-anchor="end">github.com/t0fox</text>
+  </g>
+
+  <g transform="translate(74 112)">
+    <text x="0" y="56" class="title" fill="#1D1D1F">Systems, networks,</text>
+    <text x="0" y="120" class="title" fill="#1D1D1F">and tools.</text>
+    <text x="2" y="169" class="subtitle" fill="#6E6E73">OpenWrt · containers · automation · reliable infrastructure</text>
+
+    <g transform="translate(0 214)">
+      <rect x="0" y="0" width="428" height="56" rx="18" fill="#FFFFFF" stroke="#D8D8DE" filter="url(#shadow)"/>
+      <circle cx="24" cy="28" r="5" fill="#806CF0"/>
+      <text x="42" y="33" class="mono" fill="#6E6E73">building things that explain themselves</text>
+      <rect class="cursor" x="376" y="20" width="2" height="17" rx="1" fill="#6E5AE6"/>
+    </g>
+  </g>
+
+  <g>
+    <path d="M760 294 C838 254 866 168 955 143 C1028 123 1065 169 1110 111" stroke="#C9C9D1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M787 160 C845 195 873 238 916 290 C953 334 1028 333 1088 293" stroke="#C9C9D1" stroke-opacity=".55" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M846 104 C862 151 889 174 929 191 C980 214 1025 215 1088 248" stroke="#C9C9D1" stroke-opacity=".4" stroke-width="1.5" stroke-linecap="round"/>
+
+    <g filter="url(#shadow)">
+      <circle cx="760" cy="294" r="13" fill="#FFFFFF" stroke="#D8D8DE"/>
+      <circle cx="846" cy="104" r="10" fill="#FFFFFF" stroke="#D8D8DE"/>
+      <circle cx="955" cy="143" r="15" fill="#FFFFFF" stroke="#6E5AE6" stroke-width="1.5"/>
+      <circle cx="916" cy="290" r="10" fill="#FFFFFF" stroke="#D8D8DE"/>
+      <circle cx="1088" cy="293" r="11" fill="#FFFFFF" stroke="#D8D8DE"/>
+      <circle cx="1110" cy="111" r="10" fill="#FFFFFF" stroke="#D8D8DE"/>
+    </g>
+
+    <circle class="pulse" cx="955" cy="143" r="7" fill="#6E5AE6" filter="url(#glow)"/>
+    <circle class="packet" cx="0" cy="0" r="5.5" fill="#6E5AE6" filter="url(#glow)"/>
+  </g>
+
+  <text x="1128" y="382" class="eyebrow" fill="#9A9AA0" text-anchor="end">KIRILL · INFRA / NETWORKING</text>
+</svg>
