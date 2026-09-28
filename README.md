@@ -20,18 +20,18 @@ Most of my projects start with a practical systems problem: make a service easie
 
 <a href="https://github.com/t0fox/z2kOW">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/z2kow-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/z2kow-light.svg">
-    <img src="./assets/z2kow-light.svg" width="100%" alt="z2kOW — OpenWrt networking project">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/z2kow-card-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/z2kow-card-light.svg">
+    <img src="./assets/z2kow-card-light.svg" width="100%" alt="z2kOW — OpenWrt networking project">
   </picture>
 </a>
 
 <br>
 <a href="https://github.com/t0fox/zapret2-manager">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/manager-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/manager-light.svg">
-    <img src="./assets/manager-light.svg" width="100%" alt="zapret2.manager — OpenWrt LuCI manager for zapret2-z2k">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/manager-card-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/manager-card-light.svg">
+    <img src="./assets/manager-card-light.svg" width="100%" alt="zapret2.manager — OpenWrt LuCI manager for zapret2-z2k">
   </picture>
 </a>
 
@@ -39,9 +39,9 @@ Most of my projects start with a practical systems problem: make a service easie
 
 <a href="https://github.com/t0fox/VelvLens">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/velvlens-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/velvlens-light.svg">
-    <img src="./assets/velvlens-light.svg" width="100%" alt="VelvLens — portable Windows desktop project">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/velvlens-card-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/velvlens-card-light.svg">
+    <img src="./assets/velvlens-card-light.svg" width="100%" alt="VelvLens — portable Windows desktop project">
   </picture>
 </a>
 
@@ -49,9 +49,9 @@ Most of my projects start with a practical systems problem: make a service easie
 
 <a href="https://github.com/t0fox/dev-ops-backend">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/backend-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/backend-light.svg">
-    <img src="./assets/backend-light.svg" width="100%" alt="dev-ops-backend — Docker and Nginx project">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/backend-card-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/backend-card-light.svg">
+    <img src="./assets/backend-card-light.svg" width="100%" alt="dev-ops-backend — Docker and Nginx project">
   </picture>
 </a>
 
