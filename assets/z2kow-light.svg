@@ -6,6 +6,7 @@
     .tag{font:600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     .link{font:600 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   </style>
+  <defs></defs>
   <rect x="1" y="1" width="1198" height="203" rx="24" fill="#FFFFFF" stroke="#D9D9DF" stroke-width="2"/>
   <rect x="36" y="28" width="34" height="4" rx="2" fill="#6E5AE6"/>
   <text x="36" y="55" class="eyebrow" fill="#8E8E93">OPENWRT · NETWORKING</text>
@@ -13,13 +14,13 @@
   <text x="36" y="122" class="body" fill="#6E6E73">OpenWrt adaptation of z2k with platform parity, package lifecycle,</text>
   <text x="36" y="143" class="body" fill="#6E6E73">traffic handling, WebUI, diagnostics, and reproducible validation.</text>
   <rect x="36" y="148" width="68" height="28" rx="14" fill="#F3F3F6"/><text x="46" y="167" class="tag" fill="#6E6E73">OpenWrt</text><rect x="112.4" y="148" width="54" height="28" rx="14" fill="#F3F3F6"/><text x="122.4" y="167" class="tag" fill="#6E6E73">Shell</text><rect x="174.4" y="148" width="32" height="28" rx="14" fill="#F3F3F6"/><text x="184.4" y="167" class="tag" fill="#6E6E73">CI</text>
-  <text x="934" y="175" class="link" fill="#6E5AE6">Open repository →</text>
   <rect x="992" y="34" width="132" height="116" rx="28" fill="#F3F1FF"/>
-  <g transform="translate(1016 64)">
+  <g transform="translate(1007 55)">
       <path d="M8 62L36 30L66 48L94 12" stroke="#6E5AE6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       <circle cx="8" cy="62" r="6" fill="#FFFFFF" stroke="#6E5AE6" stroke-width="2.5"/>
       <circle cx="36" cy="30" r="6" fill="#FFFFFF" stroke="#6E5AE6" stroke-width="2.5"/>
       <circle cx="66" cy="48" r="6" fill="#FFFFFF" stroke="#6E5AE6" stroke-width="2.5"/>
       <circle cx="94" cy="12" r="6" fill="#6E5AE6"/>
     </g>
+  <text x="1058" y="178" class="link" fill="#6E5AE6" text-anchor="middle">Open repository →</text>
 </svg>
