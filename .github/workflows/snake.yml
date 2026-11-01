@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - ".github/workflows/snake.yml"
+      - ".github/scripts/preserve_snake_grid.py"
 
 permissions:
   contents: write
@@ -23,22 +24,30 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Generate light and dark SVGs
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate light and dark animations
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%238B5CF6
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23A78BFA
+            dist/github-contribution-grid-snake.svg?color_snake=%237C3AED&color_dots=%23ebedf0,%2394dfac,%2357bc78,%23269b52,%2313733e
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23A78BFA&color_dots=%23161b22,%231d5e35,%232b8645,%2338b45c,%2363d982
 
-      - name: Verify generated animation files
+      - name: Keep the full contribution calendar visible
+        run: python3 .github/scripts/preserve_snake_grid.py
+
+      - name: Verify SVG outputs
         shell: bash
         run: |
           set -euo pipefail
           for file in dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg; do
             test -s "$file"
-            grep -q '<svg' "$file"
-            grep -q '@keyframes' "$file"
+            grep -Fq '<svg' "$file"
+            grep -Fq '@keyframes s0' "$file"
+            grep -Fq '.c{animation:none!important}' "$file"
+            grep -Fq '.u{display:none!important}' "$file"
             echo "Validated $file ($(wc -c < "$file") bytes)"
           done
 
