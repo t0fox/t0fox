@@ -1,36 +1,34 @@
-<h1 align="center">t0fox</h1>
+# Kirill (t0fox)
 
-<p align="center">
-  Junior DevOps / Systems · Linux · OpenWrt · Docker · Networking
-</p>
+**Systems & Backend Development · Linux Networking · DevOps**
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,docker,nginx,git,github,bash,python,rust&theme=dark" alt="tech stack" />
-</p>
+I build open-source software for Linux and embedded routers, with a focus on network protocols, reliability, diagnostics, and reproducible releases. My projects cover low-level packet processing in **Rust and C**, backend development in **Go**, and automation for Linux/OpenWrt.
 
-## About me
+## Selected projects
 
-I'm Kirill. I'm learning **DevOps / systems engineering** and building practical projects around Linux, networking, containers and OpenWrt.
+| Project | What I work on |
+| --- | --- |
+| **[r2o](https://github.com/t0fox/r2o)** · Rust | Router-side networking system for OpenWrt/Keenetic: NFQUEUE datapath, TCP/TLS/QUIC traffic observation, automated strategy discovery, persistent state, and a separate controller. Includes multi-architecture builds, signed releases, and QEMU/differential tests. *Actively developed; real-device validation is ongoing.* |
+| **[d2o](https://github.com/t0fox/d2o)** · C/C11 | Independent development based on d2k: packet processing and connection diagnostics, TCP/UDP/QUIC handling, Discord voice paths, a C11 Telegram proxy, and a web control panel. |
+| **[z2kOW](https://github.com/t0fox/z2kOW)** · OpenWrt / Rust / Shell | OpenWrt port and extension of z2k. Integrates with **fw4/nftables, procd, UCI and ubus**; includes network diagnostics, a Rust Telegram component, architecture-specific packaging, signed updates, and rollback logic. |
+| **[Subscription Aggregator API](https://github.com/t0fox/subscription-aggregator-api)** · Go | REST service using **Gin, PostgreSQL and pgx**: CRUD, reporting, migrations, pagination, health/readiness checks, Swagger, Docker Compose, and CI tests. |
+| **[dev-ops-backend](https://github.com/t0fox/dev-ops-backend)** · Docker | Containerized Python backend behind **Nginx** with an isolated Docker network, health checks, and GitHub Actions smoke tests. |
+| **[VelvLens](https://github.com/t0fox/VelvLens)** · Electron | Portable Windows desktop wrapper for Sub-Store with a loopback-only backend, pinned runtime, packaging, and automated smoke checks. |
 
-I like working on things where I can understand the whole path: from configuration and networking to logs, CI and deployment.
+## Technical stack
 
-## Projects
+- **Languages:** Rust, C/C11, Go, Bash/Shell, Python, JavaScript.
+- **Linux & networking:** Linux, OpenWrt, TCP/IP, TLS, UDP/QUIC, NFQUEUE, nftables, firewall rules, routing, network debugging.
+- **Backend & infrastructure:** PostgreSQL, Gin, Docker, Docker Compose, Nginx, REST APIs, Git, GitHub Actions.
+- **Testing & delivery:** cross-compilation, QEMU, automated tests, CI pipelines, release packaging, Ed25519 signatures, SHA-256 verification.
 
-- **[z2kOW](https://github.com/t0fox/z2kOW)** — OpenWrt adaptation of z2k with packaging, networking integration and CI.
-- **[zapret2.manager](https://github.com/t0fox/zapret2-manager)** — LuCI manager for zapret2 / z2k on OpenWrt.
-- **[VelvLens](https://github.com/t0fox/VelvLens)** — portable Windows app for resolving and working with proxy subscriptions.
-- **[dev-ops-backend](https://github.com/t0fox/dev-ops-backend)** — Docker + Nginx backend project with healthchecks, isolated networking and GitHub Actions.
+## Engineering interests
 
-## What I'm working with
+Resource-constrained Linux systems, network software, service lifecycle management, observability, automated regression testing, and reliable deployment/update workflows.
 
-`Linux` · `Docker` · `Nginx` · `OpenWrt` · `GitHub Actions` · `Bash` · `Python` · `Rust`
+## GitHub activity
 
-## Activity
+The contribution animation is generated daily by [GitHub Actions](https://github.com/t0fox/t0fox/actions/workflows/snake.yml).
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg">
-  </picture>
-</p>
+![GitHub contribution snake — dark theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+![GitHub contribution snake — light theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg#gh-light-mode-only)
