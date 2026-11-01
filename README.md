@@ -48,9 +48,7 @@ An independent development of **d2k** for router-side traffic handling. It provi
 
 **Testing & delivery:** QEMU, cross-architecture builds, regression testing, release automation, Ed25519 verification, SHA-256 checks, and rollback.
 
-## GitHub activity
 
-The animation runs over the contribution calendar without hiding its existing activity cells. Updated automatically by [GitHub Actions](https://github.com/t0fox/t0fox/actions/workflows/snake.yml).
 
 ![Contribution snake — dark theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
 ![Contribution snake — light theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg#gh-light-mode-only)
