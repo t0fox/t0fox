@@ -1,34 +1,30 @@
-# Kirill (t0fox)
+# Open-source projects
 
-**Systems & Backend Development · Linux Networking · DevOps**
+Linux networking · Embedded systems · Backend services · Infrastructure automation
 
-I build open-source software for Linux and embedded routers, with a focus on network protocols, reliability, diagnostics, and reproducible releases. My projects cover low-level packet processing in **Rust and C**, backend development in **Go**, and automation for Linux/OpenWrt.
+A selection of projects focused on network traffic processing, router integrations, diagnostics, service management, and reliable builds and updates.
 
-## Selected projects
+## Featured projects
 
-| Project | What I work on |
+| Project | Scope |
 | --- | --- |
-| **[r2o](https://github.com/t0fox/r2o)** · Rust | Router-side networking system for OpenWrt/Keenetic: NFQUEUE datapath, TCP/TLS/QUIC traffic observation, automated strategy discovery, persistent state, and a separate controller. Includes multi-architecture builds, signed releases, and QEMU/differential tests. *Actively developed; real-device validation is ongoing.* |
-| **[d2o](https://github.com/t0fox/d2o)** · C/C11 | Independent development based on d2k: packet processing and connection diagnostics, TCP/UDP/QUIC handling, Discord voice paths, a C11 Telegram proxy, and a web control panel. |
-| **[z2kOW](https://github.com/t0fox/z2kOW)** · OpenWrt / Rust / Shell | OpenWrt port and extension of z2k. Integrates with **fw4/nftables, procd, UCI and ubus**; includes network diagnostics, a Rust Telegram component, architecture-specific packaging, signed updates, and rollback logic. |
-| **[Subscription Aggregator API](https://github.com/t0fox/subscription-aggregator-api)** · Go | REST service using **Gin, PostgreSQL and pgx**: CRUD, reporting, migrations, pagination, health/readiness checks, Swagger, Docker Compose, and CI tests. |
-| **[dev-ops-backend](https://github.com/t0fox/dev-ops-backend)** · Docker | Containerized Python backend behind **Nginx** with an isolated Docker network, health checks, and GitHub Actions smoke tests. |
-| **[VelvLens](https://github.com/t0fox/VelvLens)** · Electron | Portable Windows desktop wrapper for Sub-Store with a loopback-only backend, pinned runtime, packaging, and automated smoke checks. |
+| **[r2o](https://github.com/t0fox/r2o)** | Adaptive network traffic handling for OpenWrt and Keenetic. NFQUEUE datapath, TCP/TLS/QUIC observation, strategy discovery, persistent state, a separate controller, QEMU tests, and signed multi-architecture releases. **In active development; real-device validation is ongoing.** |
+| **[d2o](https://github.com/t0fox/d2o)** | Router-side traffic processing based on d2k. Connection diagnostics, automated strategy selection, TCP/UDP/QUIC handling, Discord voice support, a local Telegram proxy, and a web panel. |
+| **[z2kOW](https://github.com/t0fox/z2kOW)** | OpenWrt port and extension of z2k. Integration with fw4/nftables, procd, UCI and ubus; traffic diagnostics, a local Telegram component, architecture-specific releases, integrity verification, and update rollback. |
+| **[Subscription Aggregator API](https://github.com/t0fox/subscription-aggregator-api)** | Subscription management REST API with PostgreSQL, migrations, pagination, reporting, health/readiness endpoints, Swagger documentation, Docker Compose, and CI checks. |
+| **[dev-ops-backend](https://github.com/t0fox/dev-ops-backend)** | Containerized backend behind Nginx: isolated Docker networking, health checks, automated startup, and CI smoke tests. |
+| **[VelvLens](https://github.com/t0fox/VelvLens)** | Portable Windows app packaging Sub-Store with a local-only backend, pinned dependencies, runtime checks, and installer/portable builds. |
 
-## Technical stack
+## Technical areas
 
-- **Languages:** Rust, C/C11, Go, Bash/Shell, Python, JavaScript.
-- **Linux & networking:** Linux, OpenWrt, TCP/IP, TLS, UDP/QUIC, NFQUEUE, nftables, firewall rules, routing, network debugging.
-- **Backend & infrastructure:** PostgreSQL, Gin, Docker, Docker Compose, Nginx, REST APIs, Git, GitHub Actions.
-- **Testing & delivery:** cross-compilation, QEMU, automated tests, CI pipelines, release packaging, Ed25519 signatures, SHA-256 verification.
+- **Linux & networking:** OpenWrt, TCP/IP, TLS, QUIC, NFQUEUE, nftables, routing, traffic diagnostics.
+- **Infrastructure:** Docker, Docker Compose, Nginx, GitHub Actions, system services, configuration management.
+- **Backend & data:** REST APIs, PostgreSQL, migrations, health/readiness endpoints.
+- **Builds & verification:** cross-compilation, QEMU, automated tests, multi-architecture packaging, Ed25519 signatures, SHA-256 checks, rollback.
 
-## Engineering interests
+## Contribution activity
 
-Resource-constrained Linux systems, network software, service lifecycle management, observability, automated regression testing, and reliable deployment/update workflows.
+Generated daily by [GitHub Actions](https://github.com/t0fox/t0fox/actions/workflows/snake.yml).
 
-## GitHub activity
-
-The contribution animation is generated daily by [GitHub Actions](https://github.com/t0fox/t0fox/actions/workflows/snake.yml).
-
-![GitHub contribution snake — dark theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
-![GitHub contribution snake — light theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+![Contribution snake — dark theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+![Contribution snake — light theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg#gh-light-mode-only)
