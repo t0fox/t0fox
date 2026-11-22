@@ -9,7 +9,6 @@ on:
       - main
     paths:
       - ".github/workflows/snake.yml"
-      - ".github/scripts/preserve_snake_grid.py"
 
 permissions:
   contents: write
@@ -24,21 +23,15 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Check out profile repository
-        uses: actions/checkout@v4
-
       - name: Generate light and dark animations
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%237C3AED&color_dots=%23ebedf0,%2394dfac,%2357bc78,%23269b52,%2313733e
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%23A78BFA&color_dots=%23161b22,%231d5e35,%232b8645,%2338b45c,%2363d982
+            dist/github-contribution-grid-snake.svg?color_snake=%23c65316&color_dots=%23ebedf0,%23f6dcc7,%23eeb68a,%23d98448,%23a95220
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23ffad66&color_dots=%23161b22,%23392b20,%2365482d,%239e6737,%23d89a57
 
-      - name: Keep the full contribution calendar visible
-        run: python3 .github/scripts/preserve_snake_grid.py
-
-      - name: Verify SVG outputs
+      - name: Verify animated SVG outputs
         shell: bash
         run: |
           set -euo pipefail
@@ -46,13 +39,16 @@ jobs:
             test -s "$file"
             grep -Fq '<svg' "$file"
             grep -Fq '@keyframes s0' "$file"
-            grep -Fq '.c{animation:none!important}' "$file"
-            grep -Fq '.u{display:none!important}' "$file"
+            if grep -Fq '.c{animation:none!important}' "$file"; then
+              echo "::error::Contribution-cell animation is disabled in $file"
+              exit 1
+            fi
+            python3 -c 'import sys, xml.etree.ElementTree as ET; ET.parse(sys.argv[1])' "$file"
             echo "Validated $file ($(wc -c < "$file") bytes)"
           done
 
       - name: Publish SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         with:
           target_branch: output
           build_dir: dist

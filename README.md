@@ -1,54 +1,86 @@
-# Linux Systems · Networking · Infrastructure
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img alt="t0fox — Linux, networking and open source. Small devices. Real systems." src="assets/hero-dark.svg" width="100%">
+</picture>
 
-Open-source projects focused on embedded Linux, network services, diagnostics, automation, and reliable software delivery.
+<p align="center">
+  <a href="https://github.com/t0fox/r2o"><b>R2O</b></a> &nbsp; / &nbsp;
+  <a href="https://github.com/t0fox/d2o"><b>D2O</b></a> &nbsp; / &nbsp;
+  <a href="https://github.com/t0fox/z2kOW"><b>z2kOW</b></a> &nbsp; / &nbsp;
+  <a href="https://github.com/t0fox?tab=repositories">All repositories ↗</a>
+</p>
 
-## Featured engineering projects
+I build open-source tools for **Linux, OpenWrt and Keenetic** — from packet processing and local proxies to diagnostics, web panels and signed updates.
 
-### [r2o](https://github.com/t0fox/r2o) — Adaptive network processing
+**Current focus:** adaptive networking in **Rust and C**. Discover the problem, verify the strategy, make it work on the router.
 
-A router-side network engine for **OpenWrt and Keenetic**, with a dedicated packet-processing datapath, a separate controller, and automated discovery of connection problems.
+## Network projects
 
-- **Design:** NFQUEUE integration, TCP/TLS/QUIC traffic observation, persistent strategy state, and resource-aware background checks.
-- **Verification:** automated regression tests, comparisons against the d2o implementation, QEMU/OpenWrt checks, and architecture-specific release builds.
-- **Status:** actively developed; passing automated checks does not imply full validation on every physical router.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/t0fox/r2o">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/r2o-card-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="assets/r2o-card-light.svg">
+          <img alt="R2O — adaptive networking in Rust for OpenWrt and Keenetic. Discover. Verify. Apply." src="assets/r2o-card-dark.svg" width="100%">
+        </picture>
+      </a>
+      <p>Rust packet engine, automatic strategy discovery, local Telegram proxy and a web panel.</p>
+      <p><a href="https://github.com/t0fox/r2o">Explore R2O ↗</a> · <a href="https://github.com/t0fox/r2o/releases">Releases</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/t0fox/d2o">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/d2o-card-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="assets/d2o-card-light.svg">
+          <img alt="D2O — router-side networking in C for OpenWrt and Keenetic. Traffic. Strategies. Diagnostics." src="assets/d2o-card-dark.svg" width="100%">
+        </picture>
+      </a>
+      <p>Adaptive traffic handling in C, connection diagnostics and a local Telegram proxy.</p>
+      <p><a href="https://github.com/t0fox/d2o">Explore D2O ↗</a> · <a href="https://github.com/t0fox/d2o/releases">Releases</a></p>
+    </td>
+  </tr>
+</table>
 
-[Source & architecture](https://github.com/t0fox/r2o) · [CI](https://github.com/t0fox/r2o/actions/workflows/ci.yml) · [Releases](https://github.com/t0fox/r2o/releases)
+**[z2kOW ↗](https://github.com/t0fox/z2kOW)** — independent OpenWrt port and extension of z2k. System integration, router services, a local web panel and signed releases.
 
-### [z2kOW](https://github.com/t0fox/z2kOW) — Embedded Linux integration
+## Under the hood
 
-An independent **OpenWrt port and extension of z2k**, integrating network tooling with the operating system rather than requiring a separate server.
+| Systems & networking | Build & delivery |
+| :--- | :--- |
+| Rust · C · Linux · OpenWrt · Keenetic | QEMU · cross-compilation · GitHub Actions |
+| TCP/IP · TLS · QUIC · NFQUEUE · nftables | Regression tests · Ed25519 · SHA-256 · rollback |
+| Docker · Nginx · PostgreSQL · REST APIs | Service management · automation · diagnostics |
 
-- **System integration:** fw4/nftables, procd, UCI, ubus, routing, traffic diagnostics, and a local web panel.
-- **Delivery:** per-architecture packages, signed update metadata, integrity checks, service lifecycle management, and rollback/recovery paths.
+<details>
+<summary><b>More things I've built</b></summary>
 
-[Source](https://github.com/t0fox/z2kOW) · [CI](https://github.com/t0fox/z2kOW/actions/workflows/ci.yml) · [Releases](https://github.com/t0fox/z2kOW/releases) · [Operational documentation](https://github.com/t0fox/z2kOW/blob/main/docs/openwrt-release-operations.md)
+<br>
 
-### [d2o](https://github.com/t0fox/d2o) — Traffic analysis and diagnostics
+| Project | What it does |
+| :--- | :--- |
+| [Subscription Aggregator API](https://github.com/t0fox/subscription-aggregator-api) | REST API with PostgreSQL, migrations, pagination and health checks. |
+| [dev-ops-backend](https://github.com/t0fox/dev-ops-backend) | Containerized backend, Nginx reverse proxy and automated smoke tests. |
+| [VelvLens](https://github.com/t0fox/VelvLens) | Portable desktop packaging, local backend and build verification. |
 
-An independent development of **d2k** for router-side traffic handling. It provides a C-based implementation used as a behavioral reference for r2o, while remaining its own project.
+</details>
 
-- **Networking:** connection monitoring, adaptive strategy selection, TCP/UDP/QUIC handling, and Discord voice paths.
-- **Components:** local Telegram proxy, network diagnostics, router service integration, and web management.
+## Contribution trail
 
-[Source](https://github.com/t0fox/d2o) · [CI](https://github.com/t0fox/d2o/actions/workflows/ci.yml) · [Releases](https://github.com/t0fox/d2o/releases)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg">
+  <img alt="Animated snake moving through my GitHub contribution calendar" src="https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
 
-## Backend & infrastructure projects
+<p align="center"><sub>Generated from my GitHub contributions with <a href="https://github.com/Platane/snk">Platane/snk</a>.</sub></p>
 
-| Project | Engineering scope |
-| --- | --- |
-| [Subscription Aggregator API](https://github.com/t0fox/subscription-aggregator-api) | REST API, PostgreSQL, migrations, pagination, Swagger, health/readiness probes, Docker Compose, and CI tests. |
-| [dev-ops-backend](https://github.com/t0fox/dev-ops-backend) | Nginx reverse proxy, isolated Docker networking, containerized backend, and automated smoke tests. |
-| [VelvLens](https://github.com/t0fox/VelvLens) | Portable desktop packaging, local-only backend, pinned upstream dependencies, runtime checks, and build verification. |
+---
 
-## Technical areas
-
-**Linux & networking:** OpenWrt, TCP/IP, TLS, QUIC, NFQUEUE, nftables, firewall and routing integration.
-
-**Infrastructure & backend:** Docker, Docker Compose, Nginx, PostgreSQL, REST APIs, service management, CI/CD.
-
-**Testing & delivery:** QEMU, cross-architecture builds, regression testing, release automation, Ed25519 verification, SHA-256 checks, and rollback.
-
-
-
-![Contribution snake — dark theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
-![Contribution snake — light theme](https://raw.githubusercontent.com/t0fox/t0fox/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+<p align="center">
+  <b>Support my open-source work</b><br>
+  <a href="https://pay.cloudtips.ru/p/5e6571c5">CloudTips</a> &nbsp; · &nbsp;
+  <a href="https://donation.streamiverse.io/t0fox">Streamiverse</a>
+</p>

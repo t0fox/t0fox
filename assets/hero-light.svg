@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">t0fox — Linux, networking and open source</title>
+  <desc id="desc">Small devices. Real systems. A geometric fox sits between animated packet routes. The illustration is decorative; it does not display live network activity.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#e8ded3"/></pattern>
+    <linearGradient id="fox" x1="620" y1="76" x2="733" y2="214" gradientUnits="userSpaceOnUse"><stop stop-color="#ba4f18"/><stop offset="1" stop-color="#dd7136"/></linearGradient>
+    <linearGradient id="fade" x1="470" y1="150" x2="900" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#faf7f2" stop-opacity="0"/><stop offset="1" stop-color="#f2ece4"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family:Arial,Helvetica,sans-serif; }
+    .mono { font-family:'DejaVu Sans Mono',Consolas,monospace; }
+    .packet { stroke:#ba4f18; stroke-width:3; stroke-linecap:round; stroke-dasharray:2 98; animation:flow 6s linear infinite; }
+    .outbound { animation-duration:7s; }
+    @keyframes flow { from { stroke-dashoffset:100; } to { stroke-dashoffset:0; } }
+    .beacon { transform-origin:679px 150px; animation:breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity:.3; } 50% { opacity:.65; } }
+    @media (prefers-reduced-motion:reduce) { .packet,.beacon { animation:none; } .packet { stroke-dashoffset:37; } }
+  </style>
+  <rect x="0.5" y="0.5" width="899" height="299" rx="16" fill="#faf7f2" stroke="#e0d7cc"/>
+  <path d="M480 1H883a16 16 0 0 1 16 16v266a16 16 0 0 1-16 16H480Z" fill="url(#fade)"/>
+  <path d="M480 18H882V282H480Z" fill="url(#grid)"/>
+  <path d="M40 48H64" stroke="#ba4f18" stroke-width="2"/>
+  <text class="mono" x="76" y="52" fill="#625a52" font-size="11" letter-spacing="1.7">OPEN SOURCE ENGINEERING</text>
+  <text class="mono" x="35" y="155" fill="#24201e" font-size="102" font-weight="700" letter-spacing="-6">t<tspan fill="#ba4f18">0</tspan>fox</text>
+  <text x="40" y="204" fill="#24201e" font-size="24" font-weight="600" letter-spacing="-.5">Small devices. Real systems.</text>
+  <text class="mono" x="41" y="255" fill="#625a52" font-size="11" letter-spacing="1.25">LINUX / NETWORKING / OPEN SOURCE</text>
+  <circle class="beacon" cx="679" cy="150" r="109" stroke="#c9b8a5" stroke-dasharray="2 9"/>
+  <g stroke="#c9b8a5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M514 94H568L616 142H632"/>
+
+    <path d="M514 211H566L615 162H634"/>
+
+    <path d="M727 142H778L824 96H866"/>
+
+    <path d="M724 163H778L826 211H866"/>
+  </g>
+  <g>
+    <path class="packet inbound" d="M514 94H568L616 142H632" pathLength="100" style="animation-delay:0s"/>
+
+    <path class="packet inbound" d="M514 211H566L615 162H634" pathLength="100" style="animation-delay:-3s"/>
+
+    <path class="packet outbound" d="M727 142H778L824 96H866" pathLength="100" style="animation-delay:-1.6s"/>
+
+    <path class="packet outbound" d="M724 163H778L826 211H866" pathLength="100" style="animation-delay:-4.6s"/>
+  </g>
+  <g fill="#faf7f2" stroke="#ba4f18" stroke-width="1.5">
+    <circle cx="514" cy="94" r="4"/><circle cx="514" cy="211" r="4"/>
+    <circle cx="866" cy="96" r="4"/><circle cx="866" cy="211" r="4"/>
+  </g>
+  <path d="M620 76L649 109L679 95L709 109L738 76L727 163L712 181L679 216L646 181L631 163Z" fill="#f4e7d9" stroke="url(#fox)" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M620 76L649 109L631 136Z M738 76L709 109L727 136Z" fill="url(#fox)" opacity=".9"/>
+  <path d="M631 136L649 109L679 129L709 109L727 136L712 181L679 216L646 181Z" fill="url(#fox)" opacity=".09"/>
+  <path d="M631 136L654 162L679 188L704 162L727 136M649 109L679 129L709 109M679 129V174" stroke="url(#fox)" stroke-width="1.5" stroke-linejoin="round" opacity=".9"/>
+  <path d="M644 144L662 151L656 156Z M714 144L696 151L702 156Z" fill="#24201e"/>
+  <path d="M671 175H687L679 187Z" fill="#ba4f18"/>
+  <path d="M679 187V205M666 204L679 216L692 204" stroke="#ba4f18" stroke-width="1.5" stroke-linejoin="round"/>
+  <text class="mono" x="679" y="268" fill="#81766c" font-size="10" text-anchor="middle" letter-spacing="2">BUILD / OBSERVE / ITERATE</text>
+</svg>
