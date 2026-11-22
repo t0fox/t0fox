@@ -8,9 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/t0fox/r2o">r2o</a> &nbsp; · &nbsp;
-  <a href="https://github.com/t0fox/d2o">d2o</a> &nbsp; · &nbsp;
-  <a href="https://github.com/t0fox/z2kOW">z2kOW</a> &nbsp; · &nbsp;
-  <a href="https://github.com/t0fox?tab=repositories">все проекты</a>
+  <a href="https://github.com/t0fox/z2kOW">z2kOW</a>
 </p>
 
 <br>
